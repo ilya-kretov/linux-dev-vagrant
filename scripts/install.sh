@@ -82,6 +82,19 @@ sudo apt-get install docker-ce -y
 sudo usermod -aG docker $USER_NAME
 sudo apt-get install docker-compose -y
 
+cd
+wget https://download.jetbrains.com/webide/PhpStorm-2017.2.4.tar.gz
+tar -xvf PhpStorm-2017.2.4.tar.gz
+
+if [ -d ~/Рабочий\ стол/ ]; then
+    cd ~/Рабочий\ стол/
+    ln -s ~/PhpStorm-172.4155.41/bin/phpstorm.sh
+fi
+if [ -d ~/Desktop/ ]; then
+    cd ~/Desktop/
+    ln -s ~/PhpStorm-172.4155.41/bin/phpstorm.sh
+fi
+
 echo "Virtual machine is installed successfully"
 #sudo startxfce4&
 
