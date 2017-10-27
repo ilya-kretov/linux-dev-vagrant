@@ -58,5 +58,5 @@ sudo usermod -aG docker $USER_NAME
 sudo apt-get install docker-compose -y
 
 echo "Virtual machine is installed successfully"
-sudo startxfce4&
+#sudo startxfce4&
 
